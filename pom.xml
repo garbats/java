@@ -52,7 +52,7 @@
     <protobuf.version>3.24.4</protobuf.version>
     <junit.version>4.13</junit.version>
     <bucket4j.version>7.6.0</bucket4j.version>
-    <bouncycastle.version>1.76</bouncycastle.version>
+    <bouncycastle.version>1.78</bouncycastle.version>
     <gson.version>2.10.1</gson.version>
     <jsr305.version>3.0.2</jsr305.version>
     <okhttp3.version>4.11.0</okhttp3.version>
@@ -148,7 +148,7 @@
       <dependency>
         <groupId>com.amazonaws</groupId>
         <artifactId>aws-java-sdk-sts</artifactId>
-        <version>1.12.572</version>
+        <version>1.12.701</version>
         <optional>true</optional>
       </dependency>
       <dependency>
@@ -473,8 +473,8 @@
               <includes>
                 <include>src/**/*.java</include>
               </includes>
-              <trimTrailingWhitespace />
-              <endWithNewline />
+              <trimTrailingWhitespace/>
+              <endWithNewline/>
             </format>
             <!-- removes wildcard imports -->
             <format>
@@ -511,7 +511,7 @@
             </format>
           </formats>
           <java>
-            <removeUnusedImports /> <!-- self-explanatory -->
+            <removeUnusedImports/> <!-- self-explanatory -->
             <googleJavaFormat>
               <version>1.15.0</version>
             </googleJavaFormat>
@@ -527,7 +527,7 @@
               <order>java,javax,org,com,com.diffplug,
               </order>  <!-- or use <file>${basedir}/eclipse.importorder</file> -->
             </importOrder>
-            <greclipse />          <!-- has its own section below -->
+            <greclipse/>          <!-- has its own section below -->
             <licenseHeader>
               <content>
 /*
